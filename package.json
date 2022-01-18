@@ -1,0 +1,23 @@
+{
+  "name": "provider-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cryp-Tour/provider-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cryp-Tour/provider-js/issues"
+  },
+  "homepage": "https://github.com/Cryp-Tour/provider-js#readme",
+  "dependencies": {
+    "mocha": "^9.1.4",
+    "web3": "^1.6.1"
+  }
+}
