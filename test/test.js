@@ -4,7 +4,7 @@ var assert = require('assert');
 
 describe("Provider", () => {
 
-    let truffle_ABI_string = fs.readFileSync('../contracts/build/contracts/TTFactory.json');
+    let truffle_ABI_string = fs.readFileSync('../contracts/build/contracts/TourTokenFactory.json');
     let truffle_obj = JSON.parse(truffle_ABI_string);
     let ABI = truffle_obj.abi
     let address = truffle_obj.networks['5777'].address
