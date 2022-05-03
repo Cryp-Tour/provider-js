@@ -1,7 +1,7 @@
 const provider = require('../src/provider');
 
 provider.setNetworkId('5777')
-provider.setProviderURL('ws://localhost:7545')
+provider.setProviderURL('ws://127.0.0.1:7545')
 provider.initTourTokenFactoryListener('../../contracts/build/contracts/TourTokenFactory.json')
 provider.initBFactoryListener('../../contracts/build/contracts/BFactory.json')
 
@@ -15,5 +15,10 @@ provider.registerCallback("TourTokenFactory", (event) => {
 })
 
 provider.registerCallback("BFactory", (event) => {
+    console.log(event)
+    provider.addBPool('../../contracts/build/contracts/BPool.json', event.pool)
+})
+
+provider.registerCallback("BPool", (event) => {
     console.log(event)
 })
